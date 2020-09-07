@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Student {
 
-    String name;
-    int age;
-    boolean  isMarried;
+    private String name;
+    private int age;
+    private boolean  isMarried;
 
     public void getStudent(String name, int age, boolean isMarried) {
         this.name = name;

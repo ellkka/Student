@@ -11,15 +11,15 @@ public class App {
         Student max = new Student();
 
         for (int i = 0; i < size; i ++){
-            stud.name = list.next();
-            stud.age = list.nextInt();
-            stud.isMarried = list.nextBoolean();
-            if (max.age < stud.age && stud.isMarried){
-                max.name = stud.name;
-                max.age = stud.age;
+            stud.setName(list.next());
+            stud.setAge(list.nextInt());
+            stud.setMarried(list.nextBoolean());
+            if (max.getAge() < stud.getAge() && stud.isMarried()){
+                max.setName(stud.getName());
+                max.setAge(stud.getAge());
             }
         }
-        System.out.println(max.name +"Is the oldest student not married. He is "+ max.age + "old.");
+        System.out.println(max.getName() +"Is the oldest student not married. He is "+ max.getAge() + "old.");
         list.close();
 
     }
